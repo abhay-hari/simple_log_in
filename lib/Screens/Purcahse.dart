@@ -202,11 +202,11 @@ class _ScreenPurcahaseState extends State<ScreenPurcahase> {
     });
     final _name = nameController.text;
     final _email = emailController.text;
-    final _phonenumber = phoneController.text.trim.toString();
+    final _phonenumber = phoneController.text;
     final _cartData = AddtoCart(
         name: _name,
         email: _email,
-        phoneNumber: _phonenumber,
+        phoneNumber: _phonenumber.trim(),
         lat: _lat,
         long: _long,
         location: currentLocation);
